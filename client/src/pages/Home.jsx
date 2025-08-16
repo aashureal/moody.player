@@ -17,10 +17,28 @@ const Home = () => {
 
       {/* Content Part */}
       <div className="content__part">
-        <div className="sidebar"></div>
+        {/* Sidebar */}
+        <div className="sidebar">
+          <button className="btn icon__nav__btn">
+            <i className="ri-home-9-line"></i>
+            <p className="txt">Home</p>
+          </button>
+
+          <button className="btn icon__nav__btn">
+            <i className="ri-add-circle-line"></i>
+            <p className="txt">Upload</p>
+          </button>
+
+          <button className="btn icon__nav__btn">
+            <i className="ri-music-line"></i>
+            <p className="txt">Library</p>
+          </button>
+        </div>
+
+        {/* Video Box */}
         <div className="video__box">
           <img
-            src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://media.gettyimages.com/id/1286733321/video/curious-cat-on-video-call-paws-at-webcam.jpg?s=640x640&k=20&c=uOgCHsrj6OL2gYKPRkJByl2-1hahekklmkhlT1ek-vc="
             alt=""
           />
           <div className="overlay">
@@ -29,7 +47,15 @@ const Home = () => {
             <button className="btn">Detact Mood</button>
           </div>
         </div>
+
+        {/* Song List */}
         <div className="song__list">
+          <h2 className="heading">Recommended Songs</h2>
+          <Song />
+          <Song />
+          <Song />
+          <Song />
+          <Song />
           <Song />
           <Song />
           <Song />
@@ -59,7 +85,24 @@ const Home = () => {
       </div>
 
       {/* Footer */}
-      <footer></footer>
+      <footer>
+        <div className="mobile__nav">
+          <button className="btn icon__nav__btn">
+            <i className="ri-home-9-line"></i>
+            <p className="txt">Home</p>
+          </button>
+
+          <button className="btn icon__nav__btn">
+            <i className="ri-add-circle-line"></i>
+            <p className="txt">Upload</p>
+          </button>
+
+          <button className="btn icon__nav__btn">
+            <i className="ri-music-line"></i>
+            <p className="txt">Library</p>
+          </button>
+        </div>
+      </footer>
     </div>
   );
 };

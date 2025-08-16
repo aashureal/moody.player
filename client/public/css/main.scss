@@ -34,3 +34,23 @@ span {
 
 @import "./pages/Page";
 @import "./pages/Home";
+
+.icon__nav__btn {
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  // background-color: royalblue;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  i {
+    font-size: 1.5rem;
+    color: $color-gray2;
+  }
+  .txt {
+    color: $color-gray2;
+    font-size: 0.8rem;
+  }
+}
