@@ -3,13 +3,13 @@ import React from "react";
 const Song = () => {
   return (
     <div className="song">
-      <div className="left">
+      <div className="wrapper">
         <span className="count txt">01</span>
         <div className="poster">
-          <img
+          {/* <img
             src="https://i.pinimg.com/1200x/97/fc/6f/97fc6f70cb7bf7eae592684c6b24acf5.jpg"
             alt=""
-          />
+          /> */}
         </div>
         <p className="info">
           <span className="name txt">This is song name</span>
